@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: producer
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: configserver-test
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://119.3.202.87:8761/eureka/
+
+server:
+  port: 8081
